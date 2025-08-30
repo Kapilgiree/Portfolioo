@@ -1,0 +1,2721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Giri - Creative Designer & Video Editor | Portfolio</title>
+    <meta name="description"
+        content="Kapil Giri is a professional graphics designer, video editor, and motion graphics artist with expertise in Photoshop, After Effects, and Premiere Pro.">
+    <meta name="keywords"
+        content="Kapil Giri, Kapil Giree, graphics designer, video editor, motion graphics, Photoshop, After Effects, Premiere Pro, Nepal designer, KapilBlogs">
+    <meta name="author" content="Kapil Giri">
+    <meta property="og:title" content="Kapil Giri - Creative Designer & Video Editor">
+    <meta property="og:description" content="Professional portfolio of Kapil Giri, creative designer and video editor">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #A259FF;
+            --primary-light: #9F7AEA;
+            --text: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --bg-dark: #090924;
+            --bg-light: #1e1e3f;
+            --card-bg: rgba(30, 30, 63, 0.5);
+            --glass: rgba(255, 255, 255, 0.05);
+            --darker-bg: #0a0a0a;
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: radial-gradient(circle at center, var(--bg-light), var(--bg-dark));
+            background-attachment: fixed;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #8a4be6;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(162, 89, 255, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(162, 89, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .badge-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .tech-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(30, 30, 63, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        .glass {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Landing Page Styles */
+        #landing-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            animation: fadeOut 0.8s ease-in-out 2s forwards;
+            overflow: hidden;
+        }
+
+        .landing-content {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .landing-text {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            color: var(--text);
+            text-shadow: 0 0 20px rgba(162, 89, 255, 0.5);
+            position: relative;
+            letter-spacing: -0.5px;
+        }
+
+        .landing-text span {
+            display: inline-block;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin: 3.5rem 0;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out 0.8s forwards;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(162, 89, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+            transition: var(--transition);
+            box-shadow:
+                0 10px 20px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-circle::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg,
+                    rgba(162, 89, 255, 0.2),
+                    rgba(122, 96, 220, 0.1),
+                    rgba(162, 89, 255, 0.2));
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        .icon-circle i {
+            font-size: 1.4rem;
+            color: var(--primary);
+            transition: var(--transition);
+            text-shadow: 0 0 12px rgba(162, 89, 255, 0.6);
+        }
+
+        .icon-item:hover .icon-circle {
+            transform: translateY(-5px) scale(1.05);
+            background: rgba(162, 89, 255, 0.15);
+            box-shadow:
+                0 15px 30px rgba(162, 89, 255, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        .icon-item:hover .icon-circle i {
+            color: var(--text);
+            transform: scale(1.1);
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+
+        .icon-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 0.8rem;
+            background: rgba(30, 30, 63, 0.3);
+            padding: 4px 8px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            white-space: nowrap;
+        }
+
+        .landing-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.2;
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            opacity: 0.4;
+            filter: blur(50px);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 250px;
+            height: 250px;
+            top: 15%;
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 180px;
+            height: 180px;
+            bottom: 20%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .shape-3 {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            left: 25%;
+            animation-delay: 4s;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: rgba(9, 9, 36, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .tech-badges {
+            margin-top: 30px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            color: var(--text);
+            transition: var(--transition);
+            font-size: 1.2rem;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(162, 89, 255, 0.5);
+        }
+
+        .social-icon::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .social-icon:hover::after {
+            opacity: 1;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .illustration {
+            width: 100%;
+            max-width: 500px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--card-bg);
+            box-shadow: 0 0 30px rgba(162, 89, 255, 0.3);
+            transition: var(--transition);
+        }
+
+        .profile-pic:hover {
+            box-shadow: 0 0 50px rgba(162, 89, 255, 0.5);
+        }
+
+        .quote {
+            font-style: italic;
+            padding: 20px;
+            border-left: 3px solid var(--primary);
+            background-color: var(--card-bg);
+            border-radius: 0 10px 10px 0;
+            margin: 30px 0;
+        }
+
+        /* Portfolio Section */
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-tabs {
+            display: flex;
+            gap: 10px;
+            background-color: var(--card-bg);
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .tab {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab.active {
+            background-color: var(--primary);
+        }
+
+        /* Enhanced Portfolio Grid */
+        .portfolio-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        .category-btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: var(--card-bg);
+            color: var(--text);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .category-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .category-btn:hover:not(.active) {
+            background-color: rgba(162, 89, 255, 0.2);
+        }
+
+        /* Portfolio Showcase */
+        .portfolio-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+            aspect-ratio: 1/1;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(162, 89, 255, 0.3);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(9, 9, 36, 0.9), transparent);
+            padding: 20px;
+            transform: translateY(100%);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .portfolio-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .portfolio-description {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-tag {
+            background-color: rgba(162, 89, 255, 0.2);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(162, 89, 255, 0.3);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .blog-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .blog-read-more:hover {
+            gap: 10px;
+        }
+
+        /* Before/After Comparison */
+        .comparison-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 40px 0;
+        }
+
+        .comparison-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .before-image {
+            z-index: 1;
+            clip-path: polygon(0 0, var(--position, 50%) 0, var(--position, 50%) 100%, 0 100%);
+        }
+
+        .after-image {
+            z-index: 2;
+        }
+
+        .comparison-slider {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: var(--primary);
+            z-index: 3;
+            left: var(--position, 50%);
+            transform: translateX(-50%);
+            cursor: ew-resize;
+        }
+
+        .comparison-slider::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .comparison-slider::after {
+            content: '↔';
+            position: absolute;
+            color: white;
+            font-size: 1.2rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Portfolio Showcase Types */
+        .portfolio-type {
+            margin-top: 80px;
+        }
+
+        .type-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .type-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .type-title {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        /* Check Out More Section */
+        .check-more {
+            text-align: center;
+            margin: 60px 0 30px;
+        }
+
+        .check-more h3 {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
+        /* Floating Check More Button */
+        .floating-check-more {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(162, 89, 255, 0.5);
+            transition: var(--transition);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .floating-check-more.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .floating-check-more:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(162, 89, 255, 0.7);
+        }
+
+        .floating-check-more i {
+            font-size: 1.5rem;
+        }
+
+        /* Image Scroller for Portfolio */
+        .scroller {
+            max-width: 100%;
+            overflow: hidden;
+            -webkit-mask: linear-gradient(90deg,
+                    transparent,
+                    white 20%,
+                    white 80%,
+                    transparent);
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            margin-bottom: 50px;
+        }
+
+        .scroller__inner {
+            padding-block: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scroller[data-direction="right"] {
+            --_animation-direction: reverse;
+        }
+
+        .scroller[data-direction="left"] {
+            --_animation-direction: forwards;
+        }
+
+        .scroller[data-speed="fast"] {
+            --_animation-duration: 20s;
+        }
+
+        .scroller[data-speed="slow"] {
+            --_animation-duration: 60s;
+        }
+
+        .scroller__inner {
+            width: max-content;
+            flex-wrap: nowrap;
+            animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translate(calc(-50% - 0.5rem));
+            }
+        }
+
+        .scroller img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .scroller img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Certificates Section */
+        .certificate-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .certificate-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: var(--darker-bg);
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease;
+        }
+
+        .certificate-card:hover .certificate-image {
+            transform: scale(1.05);
+        }
+
+        .certificate-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .certificate-issuer {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack-category {
+            margin-bottom: 30px;
+        }
+
+        .tech-stack-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .tech-stack-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+
+        .tech-stack-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .tech-stack-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-panel {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: var(--darker-bg);
+            color: var(--text);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(162, 89, 255, 0.2);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .social-connections {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 12px 15px;
+            border-radius: 8px;
+            background-color: var(--darker-bg);
+            transition: var(--transition);
+        }
+
+        .social-item:hover {
+            background-color: rgba(162, 89, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .social-icon-large {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .social-text {
+            flex: 1;
+        }
+
+        .social-text span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .comments-list {
+            margin-top: 2rem;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .comment {
+            display: flex;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            background-color: var(--darker-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+        }
+
+        .comment-time {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .comment-badge {
+            background-color: var(--primary);
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .comment-text {
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .pinned-comment {
+            border-left: 3px solid var(--primary);
+            padding-left: 15px;
+            background-color: rgba(162, 89, 255, 0.05);
+        }
+
+        .file-upload {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .file-upload input {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .file-upload-label {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .file-upload-label:hover {
+            border-color: var(--primary);
+        }
+
+        .file-upload-icon {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+
+        .file-upload-text span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Modal for project details */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background-color: var(--bg-light);
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(162, 89, 255, 0.3);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            background-color: var(--darker-bg);
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .modal-description {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .modal-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal-tech-item {
+            background-color: rgba(162, 89, 255, 0.2);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+
+        /* Page Transitions */
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Typewriter Effect */
+        .typewriter-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .typewriter {
+            display: inline-block;
+        }
+
+        .typewriter::after {
+            content: "|";
+            position: absolute;
+            right: -8px;
+            animation: blink 0.7s infinite;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Blog Detail Page Styles */
+        .blog-detail-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .blog-detail-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .blog-detail-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .blog-detail-section {
+            margin-bottom: 40px;
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .highlight-text {
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+        }
+
+        .blog-detail-image-small {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .back-to-blog:hover {
+            gap: 10px;
+        }
+
+        /* Animations */
+        .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(1.08);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-25px) rotate(5deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        @keyframes rgbMovement {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(20px, 20px) scale(1.1);
+            }
+
+            50% {
+                transform: translate(0, 40px) scale(1.2);
+            }
+
+            75% {
+                transform: translate(-20px, 20px) scale(1.1);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(162, 89, 255, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(162, 89, 255, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(162, 89, 255, 0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 50px;
+            }
+
+            .hero-buttons,
+            .tech-badges,
+            .social-icons {
+                justify-content: center;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .portfolio-showcase {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-detail-image {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--bg-dark);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .portfolio-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .scroller img {
+                width: 250px;
+                height: 350px;
+            }
+
+            .comparison-container {
+                height: 400px;
+            }
+
+            .floating-check-more {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .blog-detail-image {
+                height: 250px;
+            }
+
+            .landing-text {
+                font-size: 2.8rem;
+            }
+
+            .icons-container {
+                gap: 1rem;
+            }
+
+            .icon-circle {
+                width: 55px;
+                height: 55px;
+            }
+
+            .icon-circle i {
+                font-size: 1.2rem;
+            }
+
+            .icon-label {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .scroller img {
+                width: 200px;
+                height: 300px;
+            }
+
+            .comparison-container {
+                height: 300px;
+            }
+
+            .blog-detail-image {
+                height: 200px;
+            }
+
+            .blog-detail-section {
+                padding: 20px;
+            }
+
+            .landing-text {
+                font-size: 2.3rem;
+            }
+
+            .icons-container {
+                gap: 0.6rem;
+            }
+
+            .icon-circle {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icon-circle i {
+                font-size: 1.1rem;
+            }
+
+            .icon-label {
+                font-size: 0.65rem;
+                padding: 3px 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <div class="landing-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="landing-content">
+            <h1 class="landing-text">
+                <span class="gradient-text">Hi, I'm</span> Kapil Giri
+            </h1>
+
+            <div class="icons-container">
+                <div class="icon-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <span class="icon-label">Graphics Designer</span>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="icon-label">Web Developer</span>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <span class="icon-label">Motion Graphics</span>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <span class="icon-label">Video Editor</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo" onclick="navigateTo('home')">Kapil Giri</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#portfolio" onclick="navigateTo('portfolio')">Portfolio</a></li>
+                <li><a href="#blog-preview" onclick="navigateTo('blog')">Blog</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="rgb-background">
+                <div class="rgb-circle"></div>
+                <div class="rgb-circle"></div>
+                <div class="rgb-circle"></div>
+                <div class="rgb-circle"></div>
+                <div class="rgb-circle"></div>
+                <div class="rgb-circle"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge badge-outline">⚡ Ready to Innovate</div>
+                        <h1 class="hero-title">
+                            <span class="typewriter-container">
+                                <span id="typewriter-title" class="typewriter"></span>
+                            </span>
+                        </h1>
+                        <h2 class="hero-subtitle">Creative Technologist</h2>
+                        <p>Creating innovative, functional, and user-friendly digital solutions for the modern web.</p>
+
+                        <div class="tech-badges">
+                            <span class="tech-badge">Photoshop</span>
+                            <span class="tech-badge">After Effects</span>
+                            <span class="tech-badge">Premiere Pro</span>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary" onclick="navigateTo('portfolio')">View
+                                Projects</a>
+                            <a href="#contact" class="btn btn-outline" onclick="navigateTo('contact')">Contact Me</a>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.behance.net/kapilgiri" class="social-icon"><i
+                                    class="fab fa-behance"></i></a>
+                            <a href="https://www.instagram.com/gravico_1316?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="gg.gif" alt="Kapil Giri - Creative Designer" class="illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="hidden">Hello, I'm Kapil Giri</h2>
+
+                <div class="about-content">
+                    <div class="about-text hidden">
+                        <p>I'm a multidisciplinary creative with expertise in Graphics Designing, motion graphics, and
+                            video editing. With over 2 years of experience in digital creation, I bring a unique
+                            combination
+                            of technical skills and artistic vision to every project.</p>
+
+                        <p>My background in computer science combined with my passion for visual storytelling allows me
+                            to create engaging digital experiences that are both technically robust and aesthetically
+                            pleasing.
+                        </p>
+
+                        <div class="quote">
+                            "Technology is my canvas, and code is my brush - I create digital experiences that inspire
+                            and engage."
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">Download CV</a>
+                            <a href="#portfolio" class="btn btn-outline" onclick="navigateTo('portfolio')">View My
+                                Work</a>
+                        </div>
+                    </div>
+
+                    <div class="about-image hidden">
+                        <img src="main.jpg" alt="Kapil Giri Profile Picture" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="hidden">My Creative Work</h2>
+                <p class="hidden" style="margin-bottom: 40px;">A showcase of my best design projects and creative work
+                </p>
+
+                <!-- Auto-scrolling image scroller -->
+                <div class="scroller hidden" data-direction="left" data-speed="slow">
+                    <div class="scroller__inner">
+                        <img src="https://i.pinimg.com/736x/14/e1/b0/14e1b04d2f6a3bd6d409f85a1ad08164.jpg"
+                            alt="Design Project 1">
+                        <img src="https://i.pinimg.com/736x/2d/01/19/2d011900cf639f36d52a31e18f3100cd.jpg"
+                            alt="Design Project 2">
+                        <img src="https://i.pinimg.com/736x/44/96/41/449641d5a45172f9c5660f964b202cd5.jpg"
+                            alt="Design Project 3">
+                        <img src="https://i.pinimg.com/1200x/6f/ce/4e/6fce4e5926314e19fcba686cc3cd6ae4.jpg"
+                            alt="Design Project 4">
+                        <img src="https://graphicdesignjunction.com/wp-content/uploads/2024/01/photo-manipulation-25.jpg"
+                            alt="Design Project 5">
+                        <img src="fathers.jpg" alt="Design Project 6">
+                        <img src="adaptor.jpg" alt="Design Project 7">
+                        <img src="kapilgireee_cleanup.jpg" alt="Design Project 8">
+                    </div>
+                </div>
+
+                <!-- Portfolio Categories -->
+                <div class="portfolio-categories hidden">
+                    <button class="category-btn active" data-category="all">All Work</button>
+                    <button class="category-btn" data-category="food">Food Posters</button>
+                    <button class="category-btn" data-category="manipulation">Photo Manipulation</button>
+                    <button class="category-btn" data-category="tech">Tech Products</button>
+                    <button class="category-btn" data-category="education">Educational</button>
+                </div>
+
+                <!-- Portfolio Showcase -->
+                <div class="portfolio-showcase hidden">
+                    <!-- Food Poster Example -->
+                    <div class="portfolio-item" data-category="food">
+                        <img src="https://img.pikbest.com/templates/2022/11/29122219/creative-food-poster_46459.jpg!w700wp"
+                            alt="Food Poster" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Creative Food Poster Design</h3>
+                            <p class="portfolio-description">Vibrant poster design for a premium restaurant</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Photoshop</span>
+                                <span class="portfolio-tag">Illustrator</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo Manipulation Example -->
+                    <div class="portfolio-item" data-category="manipulation">
+                        <img src="https://rafya.id/wp-content/uploads/2025/01/Tortoise-Surrealism-Underwater-Photo-Manipulation-Photoshop-Tutorial.jpg"
+                            alt="Photo Manipulation" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Tortoise Surrealism Underwater Photo Manipulation</h3>
+                            <p class="portfolio-description">Creative photo manipulation combining multiple elements</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Photoshop</span>
+                                <span class="portfolio-tag">Photography</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Product Example -->
+                    <div class="portfolio-item" data-category="tech">
+                        <img src="https://i.pinimg.com/736x/36/6d/f3/366df3199138fdc920d727fea8c696f6.jpg"
+                            alt="Tech Product" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Laptop Poster Desings</h3>
+                            <p class="portfolio-description">Modern tech product advertisement design</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Illustrator</span>
+                                <span class="portfolio-tag">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Photo Manipulation -->
+                    <div class="portfolio-item" data-category="manipulation">
+                        <img src="https://i.pinimg.com/236x/5a/da/69/5ada69a610b475fc5bb1ac329039a9a0.jpg"
+                            alt="Creative Manipulation" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Retro Poster Design</h3>
+                            <p class="portfolio-description">90's poster design with retro vibes
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Photoshop</span>
+                                <span class="portfolio-tag">90's Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Check Out More Button -->
+                <div class="check-more hidden">
+                    <h3>Want to see more of my work?</h3>
+                    <a href="https://www.instagram.com/gravico_1316?igsh=YXAzamcwMW14OG9w" class="btn btn-primary">
+                        View Full Portfolio
+                        <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section id="blog-preview">
+            <div class="container">
+                <h2 class="hidden">From My Blog</h2>
+                <p class="hidden" style="margin-bottom: 40px;">Latest insights and thoughts on design and technology</p>
+
+                <div class="blog-grid hidden">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card">
+                        <img src="https://encdn.ratopati.com/media/news/tourism_AByN9YWGJN.jpg" alt="Nepal Tourism"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Tourism Revival in Nepal: Post-Pandemic Opportunities</h3>
+                            <p class="blog-excerpt">Exploring how Nepal's tourism industry is bouncing back after the
+                                pandemic with new opportunities for sustainable travel...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> June 15, 2025</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('tourism-revival')">Read More
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card">
+                        <img src="https://blog.esewa.com.np/wp-content/uploads/2019/08/1200-11.jpg" alt="Digital Nepal"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Digital Transformation in Nepal: Challenges and Progress</h3>
+                            <p class="blog-excerpt">Analyzing Nepal's journey toward digitalization, the challenges
+                                faced, and the progress made in implementing the Digital Nepal Framework...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> July 3, 2025</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('digital-transformation')">Read
+                                    More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="blog-card">
+                        <img src="https://shopequo.com/cdn/shop/articles/What_Is_Climate_Change_Causes_Impact_on_Humans_and_Animals.png?v=1698979509&width=1600"
+                            alt="Climate Change" class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Climate Change Impacts on Nepal's Himalayan Ecosystem</h3>
+                            <p class="blog-excerpt">Examining how climate change is affecting Nepal's fragile mountain
+                                ecosystems and what measures are being taken to address these challenges...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> August 12, 2023</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('climate-change')">Read More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="check-more hidden">
+                    <a href="#" class="btn btn-outline" onclick="navigateTo('blog')">
+                        View All Blog Posts
+                        <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="hidden">Get In Touch</h2>
+                <p class="hidden">Feel free to reach out through the form or social media below</p>
+
+                <div class="contact-grid">
+                    <!-- Left Panel - Contact Form -->
+                    <div class="contact-panel hidden">
+                        <h3>Contact Me</h3>
+                        <p>Have something to discuss? Send me a message and let's talk.</p>
+
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+
+                        <div class="social-connections">
+                            <h4>Connect With Me</h4>
+
+                            <a href="https://www.behance.net/kapilgiri" class="social-item">
+                                <div class="social-icon-large">
+                                    <i class="fab fa-behance"></i>
+                                </div>
+                                <div class="social-text">
+                                    Behance
+                                    <span>View my designs</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/gravico_1316?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                class="social-item">
+                                <div class="social-icon-large">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="social-text">
+                                    Instagram
+                                    <span>See my work</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Panel - Comments Section -->
+                    <div class="contact-panel hidden">
+                        <h3>Testimonials</h3>
+                        <p>What clients and colleagues say about my work.</p>
+
+                        <div class="comments-list">
+                            <!-- Testimonial 1 -->
+                            <div class="comment pinned-comment">
+                                <div class="comment-avatar">JD</div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <div class="comment-author">John Doe</div>
+                                        <div class="comment-time">1 week ago</div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Amazing work on the project! The visuals really make stand out. How long did
+                                        it take you to develop this skill?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="comment">
+                                <div class="comment-avatar">SA</div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <div class="comment-author">Sarah A.</div>
+                                        <div class="comment-time">2 weeks ago</div>
+                                    </div>
+                                    <div class="comment-text">
+                                        I love your motion graphics work! Do you offer video editing services for
+                                        YouTube channels? I'd love to discuss a potential collaboration.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="comment">
+                                <div class="comment-avatar">RM</div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <div class="comment-author">Raj M.</div>
+                                        <div class="comment-time">3 weeks ago</div>
+                                    </div>
+                                    <div class="comment-text">
+                                        Kapil designed an amazing logo and brand identity for our startup. Highly
+                                        recommended for his creativity and professionalism.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blog-page" class="page">
+        <section id="blog">
+            <div class="container">
+                <h2 class="hidden">KapilBlogs</h2>
+                <p class="hidden" style="margin-bottom: 40px;">Thoughts, insights, and discussions on various topics</p>
+
+                <div class="blog-grid hidden">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card">
+                        <img src="https://encdn.ratopati.com/media/news/tourism_AByN9YWGJN.jpg" alt="Nepal Tourism"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Tourism Revival in Nepal: Post-Pandemic Opportunities</h3>
+                            <p class="blog-excerpt">Exploring how Nepal's tourism industry is bouncing back after the
+                                pandemic with new opportunities for sustainable travel and adventure tourism.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> June 15, 2023</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('tourism-revival')">Read More
+                                    <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card">
+                        <img src="https://blog.esewa.com.np/wp-content/uploads/2019/08/1200-11.jpg" alt="Digital Nepal"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Digital Transformation in Nepal: Challenges and Progress</h3>
+                            <p class="blog-excerpt">Analyzing Nepal's journey toward digitalization, the challenges
+                                faced, and the progress made in implementing the Digital Nepal Framework.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> July 3, 2023</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('digital-transformation')">Read
+                                    More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="blog-card">
+                        <img src="https://shopequo.com/cdn/shop/articles/What_Is_Climate_Change_Causes_Impact_on_Humans_and_Animals.png?v=1698979509&width=1600"
+                            alt="Climate Change" class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Climate Change Impacts on Nepal's Himalayan Ecosystem</h3>
+                            <p class="blog-excerpt">Examining how climate change is affecting Nepal's fragile mountain
+                                ecosystems and what measures are being taken to address these challenges.</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> August 12, 2023</span>
+                                <a href="#" class="blog-read-more" onclick="openBlogPost('climate-change')">Read More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Content -->
+                <div class="hidden" style="margin-top: 60px;">
+                    <h3 style="margin-bottom: 30px;">Hot Topics in Nepal: A Closer Look</h3>
+
+                    <div class="blog-content-section"
+                        style="background-color: var(--card-bg); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                        <h4 style="color: var(--primary); margin-bottom: 20px;">Tourism Revival in Nepal</h4>
+                        <p>Nepal's tourism industry, which contributes significantly to the country's economy, was
+                            severely impacted by the COVID-19 pandemic. However, 2023 has seen a remarkable recovery
+                            with visitor numbers steadily increasing.</p>
+
+                        <p>The government's "Visit Nepal 2023" campaign has been instrumental in this revival, focusing
+                            on promoting Nepal as a safe and attractive destination. Adventure tourism, including
+                            trekking, mountaineering, and paragliding, has seen particular growth. The Everest region,
+                            Annapurna Circuit, and newly opened trails in remote areas are attracting trekkers from
+                            around the world.</p>
+
+                        <p>Sustainable tourism practices are becoming increasingly important, with more operators
+                            adopting eco-friendly approaches and community-based tourism models that directly benefit
+                            local populations.</p>
+                    </div>
+
+                    <div class="blog-content-section"
+                        style="background-color: var(--card-bg); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                        <h4 style="color: var(--primary); margin-bottom: 20px;">Digital Nepal Framework</h4>
+                        <p>Nepal's digital transformation journey has gained momentum with the implementation of the
+                            Digital Nepal Framework. This ambitious initiative aims to leverage technology to drive
+                            economic growth, improve service delivery, and enhance governance.</p>
+
+                        <p>Key areas of focus include:</p>
+                        <ul style="color: var(--text-secondary); margin-left: 20px; margin-bottom: 20px;">
+                            <li>Digital infrastructure development, including expansion of broadband internet access
+                            </li>
+                            <li>E-governance initiatives to reduce bureaucracy and corruption</li>
+                            <li>Digital literacy programs to bridge the digital divide</li>
+                            <li>Support for tech startups and innovation hubs</li>
+                            <li>Cybersecurity measures to protect digital assets</li>
+                        </ul>
+
+                        <p>Despite progress, challenges remain, including limited infrastructure in rural areas,
+                            electricity shortages, and need for greater digital literacy among the population.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Individual Blog Post Pages -->
+    <div id="blog-tourism-revival" class="page">
+        <section id="blog-detail">
+            <div class="container">
+                <a href="#" class="back-to-blog" onclick="navigateTo('blog')">
+                    <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Blog
+                </a>
+
+                <div class="blog-detail-header">
+                    <h1 class="hidden">Tourism Revival in Nepal: Post-Pandemic Opportunities</h1>
+                    <div class="blog-meta" style="justify-content: center; margin-bottom: 20px;">
+                        <span class="blog-date"><i class="far fa-calendar"></i> June 15, 2023</span>
+                    </div>
+                </div>
+
+                <img src="https://encdn.ratopati.com/media/news/tourism_AByN9YWGJN.jpg" alt="Nepal Tourism"
+                    class="blog-detail-image hidden">
+
+                <div class="blog-detail-content">
+                    <div class="blog-detail-section hidden">
+                        <h2>Introduction</h2>
+                        <p>Nepal's tourism industry, which contributes significantly to the country's economy, was
+                            severely impacted by the COVID-19 pandemic. However, 2023 has seen a remarkable recovery
+                            with visitor numbers steadily increasing. The government's "Visit Nepal 2023" campaign has
+                            been instrumental in this revival, focusing on promoting Nepal as a safe and attractive
+                            destination.</p>
+
+                        <p class="highlight-text">Adventure tourism, including trekking, mountaineering, and
+                            paragliding, has seen particular growth.</p>
+
+                        <p>The Everest region, Annapurna Circuit, and newly opened trails in remote areas are attracting
+                            trekkers from around the world. Sustainable tourism practices are becoming increasingly
+                            important, with more operators adopting eco-friendly approaches and community-based tourism
+                            models that directly benefit local populations.</p>
+                    </div>
+
+                    <div class="blog-detail-section hidden">
+                        <h2>Post-Pandemic Recovery</h2>
+                        <p>After the devastating impact of the pandemic on global travel, Nepal has been working
+                            diligently to rebuild its tourism sector. The country has implemented comprehensive health
+                            and safety protocols to reassure visitors, and these efforts are paying off.</p>
+
+                        <img src="https://annapurnaexpress.prixacdn.net/media/albums/tourists.jpg_wWdVikeAvY.jpeg"
+                            alt="Tourists in Nepal" class="blog-detail-image-small">
+
+                        <p>Key factors contributing to the recovery include:</p>
+                        <ul style="color: var(--text-secondary); margin-left: 20px; margin-bottom: 20px;">
+                            <li>Enhanced health and safety measures at all tourist facilities</li>
+                            <li>Digitalization of visa processes and trekking permits</li>
+                            <li>Strategic marketing campaigns targeting key source markets</li>
+                            <li>Development of new tourism products and experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Individual Blog Post Pages -->
+    <div id="blog-digital-transformation" class="page">
+        <section id="blog-detail">
+            <div class="container">
+                <a href="#" class="back-to-blog" onclick="navigateTo('blog')">
+                    <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Blog
+                </a>
+
+                <div class="blog-detail-header">
+                    <h1 class="hidden">Digital Transformation in Nepal: Challenges and Progress</h1>
+                    <div class="blog-meta" style="justify-content: center; margin-bottom: 20px;">
+                        <span class="blog-date"><i class="far fa-calendar"></i> July 5, 2025</span>
+                    </div>
+                </div>
+
+                <img src="https://encdn.ratopati.com/media/news/tourism_AByN9YWGJN.jpg" alt="Nepal Tourism"
+                    class="blog-detail-image hidden">
+
+                <div class="blog-detail-content">
+                    <div class="blog-detail-section hidden">
+                        <h2>Introduction</h2>
+                        <p>Nepal's tourism industry, which contributes significantly to the country's economy, was
+                            severely impacted by the COVID-19 pandemic. However, 2023 has seen a remarkable recovery
+                            with visitor numbers steadily increasing. The government's "Visit Nepal 2023" campaign has
+                            been instrumental in this revival, focusing on promoting Nepal as a safe and attractive
+                            destination.</p>
+
+                        <p class="highlight-text">Adventure tourism, including trekking, mountaineering, and
+                            paragliding, has seen particular growth.</p>
+
+                        <p>The Everest region, Annapurna Circuit, and newly opened trails in remote areas are attracting
+                            trekkers from around the world. Sustainable tourism practices are becoming increasingly
+                            important, with more operators adopting eco-friendly approaches and community-based tourism
+                            models that directly benefit local populations.</p>
+                    </div>
+
+                    <div class="blog-detail-section hidden">
+                        <h2>Post-Pandemic Recovery</h2>
+                        <p>After the devastating impact of the pandemic on global travel, Nepal has been working
+                            diligently to rebuild its tourism sector. The country has implemented comprehensive health
+                            and safety protocols to reassure visitors, and these efforts are paying off.</p>
+
+                        <img src="https://annapurnaexpress.prixacdn.net/media/albums/tourists.jpg_wWdVikeAvY.jpeg"
+                            alt="Tourists in Nepal" class="blog-detail-image-small">
+
+                        <p>Key factors contributing to the recovery include:</p>
+                        <ul style="color: var(--text-secondary); margin-left: 20px; margin-bottom: 20px;">
+                            <li>Enhanced health and safety measures at all tourist facilities</li>
+                            <li>Digitalization of visa processes and trekking permits</li>
+                            <li>Strategic marketing campaigns targeting key source markets</li>
+                            <li>Development of new tourism products and experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating Check More Button -->
+    <div class="floating-check-more" onclick="navigateTo('home')">
+        <i class="fas fa-eye"></i>
+    </div>
+
+    <footer>
+        © 2025 Kapil Giri. All Rights Reserved. | <a href="#" style="color: var(--primary);"
+            onclick="navigateTo('blog')">KapilBlogs</a>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <p id="modalDescription" class="modal-description"></p>
+                <div class="modal-tech">
+                    <!-- Tech tags will be added here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Remove landing page after animation completes
+        const landingPage = document.getElementById('landing-page');
+        landingPage.addEventListener('animationend', function (e) {
+            if (e.animationName === 'fadeOut') {
+                this.style.display = 'none';
+            }
+        });
+
+        // Fallback: if animation doesn't fire, remove after 3 seconds
+        setTimeout(() => {
+            landingPage.style.display = 'none';
+        }, 3000);
+
+        // Navigation between pages
+        function navigateTo(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show selected page
+            const targetPage = document.getElementById(`${pageId}-page`);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            } else {
+                // If page doesn't exist, default to home
+                document.getElementById('home-page').classList.add('active');
+            }
+
+            // Update active nav link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${pageId}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('active');
+        }
+
+        // Open individual blog post
+        function openBlogPost(postId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show blog post page
+            const blogPostPage = document.getElementById(`blog-${postId}`);
+            if (blogPostPage) {
+                blogPostPage.classList.add('active');
+            } else {
+                // If blog post doesn't exist, default to blog page
+                document.getElementById('blog-page').classList.add('active');
+            }
+
+            // Update active nav link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.textContent === 'Blog') {
+                    link.classList.add('active');
+                }
+            });
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('active');
+        }
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach(el => observer.observe(el));
+
+        // Portfolio category filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const projectCards = document.querySelectorAll('.portfolio-item');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active category button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Typewriter effect for full titles
+        const typewriterElement = document.getElementById('typewriter-title');
+        const professions = [
+            'Video Editor',
+            'Motion Designer',
+            'Graphics Designer'
+        ];
+        let professionIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let isEnd = false;
+
+        function typeWriter() {
+            const currentProfession = professions[professionIndex];
+
+            if (isDeleting) {
+                typewriterElement.textContent = currentProfession.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentProfession.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentProfession.length) {
+                isEnd = true;
+                isDeleting = true;
+                setTimeout(typeWriter, 2000); // Pause at end of word
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                professionIndex = (professionIndex + 1) % professions.length;
+                setTimeout(typeWriter, 500); // Pause before typing next word
+            } else {
+                const typingSpeed = isDeleting ? 50 : 150;
+                setTimeout(typeWriter, typingSpeed);
+            }
+        }
+
+        // Start the typewriter effect
+        setTimeout(typeWriter, 1000);
+
+        // Simple form validation
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get all required inputs
+                const inputs = this.querySelectorAll('input[required], textarea[required]');
+                let isValid = true;
+
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.style.borderColor = '#ff4757';
+                        isValid = false;
+                    } else {
+                        input.style.borderColor = '';
+                    }
+                });
+
+                if (isValid) {
+                    // In a real app, you would send the form data to a server here
+                    alert('Form submitted successfully!');
+                    this.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+
+        // Project Modal Functions
+        function openModal(title, imageSrc, description, tags) {
+            const modal = document.getElementById('projectModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalImage = document.getElementById('modalImage');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalTech = document.querySelector('.modal-tech');
+
+            modalTitle.textContent = title;
+            modalImage.src = imageSrc;
+            modalImage.alt = title;
+            modalDescription.textContent = description;
+
+            // Clear existing tags
+            modalTech.innerHTML = '';
+
+            // Add new tags
+            tags.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.className = 'modal-tech-item';
+                tagElement.textContent = tag;
+                modalTech.appendChild(tagElement);
+            });
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function (event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Floating button visibility
+        function handleFloatingButton() {
+            const floatingBtn = document.querySelector('.floating-check-more');
+            const portfolioSection = document.getElementById('portfolio');
+            if (portfolioSection) {
+                const portfolioRect = portfolioSection.getBoundingClientRect();
+                if (window.scrollY > portfolioRect.top + 300) {
+                    floatingBtn.classList.add('visible');
+                } else {
+                    floatingBtn.classList.remove('visible');
+                }
+            }
+        }
+
+        // Initialize the page (show home page by default)
+        document.addEventListener('DOMContentLoaded', function () {
+            navigateTo('home');
+
+            // Add click handlers for portfolio items
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                item.addEventListener('click', function () {
+                    const title = this.querySelector('.portfolio-title').textContent;
+                    const imageSrc = this.querySelector('.portfolio-image').src;
+                    const description = this.querySelector('.portfolio-description').textContent;
+                    const tags = Array.from(this.querySelectorAll('.portfolio-tag')).map(tag => tag.textContent);
+
+                    openModal(title, imageSrc, description, tags);
+                });
+            });
+
+            // Handle floating button visibility
+            window.addEventListener('scroll', handleFloatingButton);
+            handleFloatingButton(); // Initial check
+        });
+    </script>
+</body>
+
+</html>
